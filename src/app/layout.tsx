@@ -14,7 +14,9 @@ const jetBrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://albertws.dev";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://albert-william-saputra-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

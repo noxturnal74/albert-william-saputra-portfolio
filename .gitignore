@@ -4,6 +4,7 @@
 # next.js
 /.next
 /out
+.vercel
 
 # production
 /build
@@ -28,3 +29,5 @@ verification-*.png
 # OS
 .DS_Store
 Thumbs.db
+
+.vercel

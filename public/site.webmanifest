@@ -1,0 +1,16 @@
+{
+  "name": "Albert William Saputra Portfolio",
+  "short_name": "Albert WS",
+  "description": "Fullstack Developer and AI & Computer Vision Enthusiast portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#0F172A",
+  "icons": [
+    {
+      "src": "/logo-mark.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml"
+    }
+  ]
+}

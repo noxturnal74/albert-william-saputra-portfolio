@@ -1,0 +1,30 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next
+/out
+
+# production
+/build
+
+# local-only documents and verification artifacts
+/*.pdf
+
+# local env files
+.env*.local
+.env
+tsconfig.tsbuildinfo
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next-dev*.log
+.next-start*.log
+verification-*.png
+
+# OS
+.DS_Store
+Thumbs.db

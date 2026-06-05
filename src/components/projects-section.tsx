@@ -2,7 +2,14 @@
 
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
-import { ArrowUpRight, BrainCircuit, Code2, Database, Layers } from "lucide-react";
+import {
+  ArrowUpRight,
+  BrainCircuit,
+  Code2,
+  Database,
+  ExternalLink,
+  Layers,
+} from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { projects } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
@@ -106,6 +113,26 @@ export function ProjectsSection() {
                     </span>
                   ))}
                 </div>
+                {project.links?.length ? (
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {project.links.map((link) => {
+                      const LinkIcon = link.label === "GitHub" ? Code2 : ExternalLink;
+
+                      return (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex min-h-10 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-ink shadow-sm transition hover:border-electric hover:text-electric"
+                        >
+                          <LinkIcon size={15} aria-hidden="true" />
+                          {link.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                ) : null}
               </div>
             </motion.article>
           );

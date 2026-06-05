@@ -72,15 +72,25 @@ export const projects = [
   },
   {
     title: "MedSign",
-    category: "Healthcare AI",
+    category: "PKM-KC Healthcare AI",
     summary:
-      "A BISINDO sign language detection web app designed to improve communication accessibility in healthcare contexts.",
-    stack: ["AI", "BISINDO", "Web App", "Healthcare"],
+      "A PKM-KC BISINDO medical communication assistant with patient and doctor modes, gesture demo assets, and a deployable Vercel frontend.",
+    stack: ["PKM-KC", "AI", "BISINDO", "Vercel"],
     cover: {
       src: "/project-covers/medsign.svg",
       alt: "MedSign sign language detection healthcare interface preview",
     },
-    signals: ["Hand landmarks", "BISINDO", "Healthcare"],
+    signals: ["PKM-KC", "BISINDO", "Live demo"],
+    links: [
+      {
+        label: "Live Demo",
+        href: "https://medsign-ai.vercel.app",
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/noxturnal74/medsign-ai",
+      },
+    ],
   },
   {
     title: "Database Rental Game",

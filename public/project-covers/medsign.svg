@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">MedSign sign language healthcare interface</title>
+  <desc id="desc">A healthcare communication interface with hand landmark detection and translated sign output.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset=".5" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#0369a1" flood-opacity=".14"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#0891b2" stroke-opacity=".1"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="600" rx="44" fill="url(#bg)"/>
+  <rect width="960" height="600" rx="44" fill="url(#grid)"/>
+  <rect x="80" y="76" width="800" height="448" rx="34" fill="#ffffff" fill-opacity=".86" filter="url(#shadow)"/>
+  <rect x="118" y="118" width="492" height="362" rx="28" fill="url(#screen)"/>
+  <path d="M253 358c-16-57-24-128 10-143 18-8 31 12 37 49l15 82" fill="none" stroke="#e0f2fe" stroke-width="20" stroke-linecap="round"/>
+  <path d="M334 344l-8-155c-2-36 46-39 50-5l9 148" fill="none" stroke="#bae6fd" stroke-width="20" stroke-linecap="round"/>
+  <path d="M406 332l18-128c6-37 53-28 48 8l-16 120" fill="none" stroke="#93c5fd" stroke-width="20" stroke-linecap="round"/>
+  <path d="M476 351l35-83c13-31 56-13 43 20l-54 129c-15 36-52 56-94 48l-85-16c-34-6-56-23-68-55" fill="none" stroke="#bfdbfe" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#22d3ee">
+    <circle cx="263" cy="215" r="8"/>
+    <circle cx="335" cy="188" r="8"/>
+    <circle cx="426" cy="204" r="8"/>
+    <circle cx="511" cy="267" r="8"/>
+    <circle cx="376" cy="463" r="8"/>
+  </g>
+  <g stroke="#67e8f9" stroke-width="3" stroke-opacity=".7">
+    <path d="M263 215l72-27 91 16 85 63"/>
+    <path d="M263 215l113 248"/>
+    <path d="M426 204l-50 259"/>
+  </g>
+  <rect x="650" y="122" width="182" height="88" rx="22" fill="#f8fafc" stroke="#bae6fd"/>
+  <path d="M736 146v40M716 166h40" stroke="#0284c7" stroke-width="10" stroke-linecap="round"/>
+  <text x="681" y="199" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Care context</text>
+  <rect x="650" y="238" width="182" height="108" rx="22" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text x="676" y="275" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">BISINDO</text>
+  <rect x="676" y="295" width="104" height="12" rx="6" fill="#67e8f9"/>
+  <rect x="676" y="320" width="132" height="12" rx="6" fill="#bfdbfe"/>
+  <rect x="650" y="374" width="182" height="72" rx="22" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="676" y="411" fill="#1d4ed8" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Real-time</text>
+  <text x="676" y="432" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">web detection</text>
+</svg>

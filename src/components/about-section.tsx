@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AnimatedSection } from "@/components/animated-section";
 
 const focusAreas = [
@@ -15,7 +16,7 @@ export function AboutSection() {
       title="An Informatics student turning technical curiosity into useful software."
       description="Albert is an Informatics student at Universitas Ma Chung with a strong interest in building practical systems across web development, databases, data science, and computer vision."
     >
-      <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+      <div className="mt-10 grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
         <div className="space-y-5 text-base leading-8 text-slate-600 sm:text-lg">
           <p>
             His work sits at the intersection of fullstack engineering and applied AI:
@@ -29,18 +30,30 @@ export function AboutSection() {
           </p>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          {focusAreas.map((area, index) => (
-            <div
-              key={area}
-              className="rounded-lg border border-white/70 bg-white/75 p-5 shadow-card backdrop-blur-xl"
-            >
-              <span className="font-mono text-sm font-semibold text-electric">
-                0{index + 1}
-              </span>
-              <p className="mt-4 font-semibold leading-7 text-ink">{area}</p>
-            </div>
-          ))}
+        <div className="space-y-4">
+          <div className="relative aspect-[16/10] overflow-hidden rounded-lg border border-white/70 bg-white/70 shadow-card backdrop-blur-xl">
+            <Image
+              src="/visuals/about-workflow.svg"
+              alt="Applied software workflow connecting frontend, database, and AI data work"
+              fill
+              sizes="(min-width: 1024px) 560px, 100vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            {focusAreas.map((area, index) => (
+              <div
+                key={area}
+                className="rounded-lg border border-white/70 bg-white/75 p-5 shadow-card backdrop-blur-xl"
+              >
+                <span className="font-mono text-sm font-semibold text-electric">
+                  0{index + 1}
+                </span>
+                <p className="mt-4 font-semibold leading-7 text-ink">{area}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </AnimatedSection>

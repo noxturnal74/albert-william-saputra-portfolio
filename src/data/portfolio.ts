@@ -64,7 +64,11 @@ export const projects = [
     summary:
       "A posture correction gym web app that uses computer vision to support safer exercise form and more useful workout feedback.",
     stack: ["Computer Vision", "MediaPipe", "Fullstack", "UX"],
-    visual: "from-blue-600 via-sky-400 to-violet-500",
+    cover: {
+      src: "/project-covers/evolution-fitness.svg",
+      alt: "Evolution Fitness posture analysis dashboard preview",
+    },
+    signals: ["Pose tracking", "Form score", "Workout UX"],
   },
   {
     title: "MedSign",
@@ -72,7 +76,11 @@ export const projects = [
     summary:
       "A BISINDO sign language detection web app designed to improve communication accessibility in healthcare contexts.",
     stack: ["AI", "BISINDO", "Web App", "Healthcare"],
-    visual: "from-cyan-500 via-blue-500 to-indigo-600",
+    cover: {
+      src: "/project-covers/medsign.svg",
+      alt: "MedSign sign language detection healthcare interface preview",
+    },
+    signals: ["Hand landmarks", "BISINDO", "Healthcare"],
   },
   {
     title: "Database Rental Game",
@@ -80,7 +88,11 @@ export const projects = [
     summary:
       "A relational database and PL/SQL system for managing rental game transactions, records, and operational workflows.",
     stack: ["SQL", "PL/SQL", "Relational Design", "Database"],
-    visual: "from-slate-800 via-blue-700 to-sky-500",
+    cover: {
+      src: "/project-covers/database-rental-game.svg",
+      alt: "Database Rental Game relational system preview",
+    },
+    signals: ["ERD logic", "Transactions", "PL/SQL"],
   },
   {
     title: "Fuzzy C-Means Image Segmentation",
@@ -88,7 +100,11 @@ export const projects = [
     summary:
       "An image processing project using clustering techniques to segment visual regions and study pattern separation.",
     stack: ["Python", "Clustering", "Image Processing", "Data"],
-    visual: "from-violet-500 via-blue-500 to-sky-400",
+    cover: {
+      src: "/project-covers/image-segmentation.svg",
+      alt: "Fuzzy C-Means image segmentation workspace preview",
+    },
+    signals: ["Clustering", "Segmentation", "Python"],
   },
   {
     title: "Queue Simulation App",
@@ -96,7 +112,11 @@ export const projects = [
     summary:
       "A single-server queue simulation built with Python to model waiting time, service patterns, and system behavior.",
     stack: ["Python", "Simulation", "Statistics", "Modeling"],
-    visual: "from-blue-500 via-indigo-500 to-slate-800",
+    cover: {
+      src: "/project-covers/queue-simulation.svg",
+      alt: "Queue Simulation App single server model preview",
+    },
+    signals: ["Arrival flow", "Waiting time", "Service model"],
   },
 ];
 

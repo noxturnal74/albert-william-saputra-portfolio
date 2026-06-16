@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { Calendar, Clock, ArrowRight, X, BookOpen } from "lucide-react";
+import NextImage from "next/image";
 
 import { AnimatedSection } from "@/components/animated-section";
 import { blogPosts } from "@/data/portfolio";
@@ -74,16 +75,17 @@ export function BlogSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              whileHover={{ y: -6 }}
-              className="group flex flex-col justify-between overflow-hidden rounded-lg border border-white/70 bg-white/78 shadow-card backdrop-blur-xl transition hover:shadow-lg"
+              whileHover={{ y: -4, scale: 1.01, boxShadow: "0 20px 40px -15px rgba(29, 78, 216, 0.08)" }}
+              className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-white/70 bg-white/78 shadow-card backdrop-blur-xl transition-all duration-300"
             >
               {/* Blog Post Cover Image */}
               <div className="relative h-48 w-full overflow-hidden border-b border-white/80 bg-blue-50">
-                <img
+                <NextImage
                   src={post.coverImage}
                   alt={post.title}
-                  className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.035]"
-                  loading="lazy"
+                  fill
+                  sizes="(min-width: 1024px) 350px, (min-width: 768px) 50vw, 100vw"
+                  className="object-cover transition duration-700 group-hover:scale-[1.035]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/10 via-transparent to-white/5" />
               </div>
@@ -154,7 +156,7 @@ export function BlogSection() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 15 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="relative z-10 flex flex-col w-full max-w-3xl max-h-[85vh] overflow-hidden rounded-xl border border-white/80 bg-white/90 shadow-2xl backdrop-blur-2xl"
+              className="relative z-10 flex flex-col w-full max-w-3xl max-h-[85vh] overflow-hidden rounded-2xl border border-white/70 bg-white/95 shadow-2xl backdrop-blur-2xl"
             >
               {/* Header */}
               <div className="flex items-start justify-between border-b border-slate-100 p-6">

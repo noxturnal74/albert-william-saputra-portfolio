@@ -19,20 +19,7 @@ const cardVariants: Variants = {
 };
 
 export function RepositoriesSection() {
-  const getGradientClass = (platform: string) => {
-    switch (platform.toLowerCase()) {
-      case "vercel":
-        return "from-slate-900 to-indigo-900";
-      case "render":
-        return "from-teal-800 to-electric";
-      case "hugging face":
-        return "from-amber-500 to-purple-700";
-      case "github pages":
-        return "from-purple-800 to-pink-600";
-      default:
-        return "from-slate-600 to-slate-900";
-    }
-  };
+  // Removed top bar gradients for a clean, premium visual aesthetic
 
   return (
     <AnimatedSection
@@ -51,11 +38,9 @@ export function RepositoriesSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              whileHover={{ y: -6 }}
-              className="group flex flex-col justify-between overflow-hidden rounded-lg border border-white/70 bg-white/78 shadow-card backdrop-blur-xl transition hover:shadow-lg"
+              whileHover={{ y: -4, scale: 1.01, boxShadow: "0 20px 40px -15px rgba(29, 78, 216, 0.08)" }}
+              className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-white/70 bg-white/78 shadow-card backdrop-blur-xl transition-all duration-300"
             >
-              {/* Top gradient accent line/area */}
-              <div className={`h-2 w-full bg-gradient-to-r ${getGradientClass(repo.deployedPlatform)}`} />
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>

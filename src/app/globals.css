@@ -18,7 +18,7 @@ body {
   background:
     linear-gradient(135deg, rgba(248, 250, 252, 1) 0%, rgba(239, 246, 255, 1) 44%, rgba(246, 243, 255, 1) 100%);
   color: var(--foreground);
-  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 ::selection {

@@ -65,7 +65,7 @@ export function Navigation() {
             download
             className="rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-semibold text-electric transition hover:border-electric hover:bg-blue-50"
           >
-            CV
+            Download CV
           </a>
           <a
             href={`mailto:${personal.email}`}
@@ -111,7 +111,7 @@ export function Navigation() {
                 href={`mailto:${personal.email}`}
                 className="rounded-lg bg-ink px-4 py-3 text-center text-sm font-semibold text-white"
               >
-                Contact Me
+                Contact
               </a>
             </div>
           </div>

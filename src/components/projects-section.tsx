@@ -1,6 +1,7 @@
 "use client";
 
 
+import NextImage from "next/image";
 import { motion, type Variants } from "framer-motion";
 import {
   ArrowUpRight,
@@ -49,10 +50,10 @@ export function ProjectsSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              whileHover={{ y: -8, scale: 1.01, boxShadow: "0 20px 40px -15px rgba(29, 78, 216, 0.12)" }}
+              whileHover={{ y: -4, scale: 1.01, boxShadow: "0 20px 40px -15px rgba(29, 78, 216, 0.08)" }}
               transition={{ duration: 0.3 }}
               className={cn(
-                "group overflow-hidden rounded-lg border border-white/70 bg-white/78 shadow-card backdrop-blur-xl flex flex-col justify-between cursor-pointer",
+                "group overflow-hidden rounded-2xl border border-white/70 bg-white/78 shadow-card backdrop-blur-xl flex flex-col justify-between cursor-pointer",
                 index < 2 ? "lg:col-span-3" : "lg:col-span-2"
               )}
             >
@@ -63,14 +64,19 @@ export function ProjectsSection() {
                     index < 2 ? "h-60 sm:h-64" : "h-52"
                   )}
                 >
-                  <img
+                  <NextImage
                     src={project.cover.src}
                     alt={project.cover.alt}
-                    className="absolute inset-0 h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.04]"
-                    loading="lazy"
+                    fill
+                    sizes={
+                      index < 2
+                        ? "(min-width: 1024px) 520px, (min-width: 768px) 50vw, 100vw"
+                        : "(min-width: 1024px) 350px, (min-width: 768px) 50vw, 100vw"
+                    }
+                    className="object-cover transition duration-700 ease-out group-hover:scale-[1.04]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/20 via-transparent to-white/10" />
-                  <div className="absolute left-5 top-5 grid size-12 place-items-center rounded-lg border border-white/70 bg-white/45 text-ink shadow-card backdrop-blur-xl group-hover:text-electric transition-colors duration-300">
+                  <div className="absolute left-5 top-5 grid size-12 place-items-center rounded-xl border border-white/70 bg-white/45 text-ink shadow-card backdrop-blur-xl group-hover:text-electric transition-colors duration-300">
                     <Icon size={24} aria-hidden="true" />
                   </div>
                   <div className="absolute bottom-5 left-5 right-5 flex flex-wrap gap-2">

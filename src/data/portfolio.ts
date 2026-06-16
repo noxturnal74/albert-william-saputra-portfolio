@@ -30,6 +30,8 @@ export const navigationItems = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Repositories", href: "#repositories" },
+  { label: "Blog", href: "#blog" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
@@ -167,4 +169,107 @@ export const achievements = [
     description:
       "Balanced technical project work with academic growth, assistantship responsibilities, and student leadership.",
   },
+];
+
+
+export const repositories = [
+  {
+    name: "medsign-ai",
+    description: "A BISINDO medical communication assistant with patient & doctor modes, gesture demo assets, and a deployable Next.js frontend.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    githubUrl: "https://github.com/noxturnal74/medsign-ai",
+    deployUrl: "https://medsign-ai.vercel.app",
+    deployedPlatform: "Vercel",
+    stars: 12,
+    forks: 2,
+    status: "active"
+  },
+  {
+    name: "evolution-fitness",
+    description: "A posture correction gym web app that uses computer vision and MediaPipe pose tracking to support safer exercise form.",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "MediaPipe", "Vercel"],
+    githubUrl: "https://github.com/noxturnal74/evolution-fitness",
+    deployUrl: "https://evolution-fitness.vercel.app",
+    deployedPlatform: "Vercel",
+    stars: 8,
+    forks: 1,
+    status: "active"
+  },
+  {
+    name: "dba-n8n-automation",
+    description: "An AI database automation system built with n8n reducing manual DBA operational workloads by 40% with smart monitoring.",
+    techStack: ["n8n", "PostgreSQL", "Docker", "Webhooks", "Render"],
+    githubUrl: "https://github.com/noxturnal74/dba-n8n-automation",
+    deployUrl: "https://dba-automation.onrender.com",
+    deployedPlatform: "Render",
+    stars: 10,
+    forks: 3,
+    status: "active"
+  },
+  {
+    name: "queue-simulation-app",
+    description: "A single-server queue simulation built to model and analyze waiting times, service patterns, and system behavior.",
+    techStack: ["Python", "Streamlit", "Matplotlib", "Render"],
+    githubUrl: "https://github.com/noxturnal74/queue-simulation-app",
+    deployUrl: "https://queue-simulation.onrender.com",
+    deployedPlatform: "Render",
+    stars: 5,
+    forks: 0,
+    status: "active"
+  },
+  {
+    name: "fuzzy-c-means-segmentation",
+    description: "An image processing project using Fuzzy C-Means clustering to segment visual regions and analyze pattern separation.",
+    techStack: ["Python", "OpenCV", "NumPy", "Streamlit", "Hugging Face"],
+    githubUrl: "https://github.com/noxturnal74/fuzzy-c-means-segmentation",
+    deployUrl: "https://huggingface.co/spaces/noxturnal74/fuzzy-c-means",
+    deployedPlatform: "Hugging Face",
+    stars: 6,
+    forks: 1,
+    status: "active"
+  },
+  {
+    name: "database-rental-game",
+    description: "A relational database design and PL/SQL management system for tracking rental game operations and transactions.",
+    techStack: ["SQL", "PL/SQL", "Relational Design", "GitHub Pages"],
+    githubUrl: "https://github.com/noxturnal74/database-rental-game",
+    deployUrl: "https://noxturnal74.github.io/database-rental-game",
+    deployedPlatform: "GitHub Pages",
+    stars: 4,
+    forks: 1,
+    status: "active"
+  }
+];
+
+export const blogPosts = [
+  {
+    id: "sql-query-optimization",
+    title: "Optimizing SQL Queries in Enterprise FinTech Applications",
+    excerpt: "A deep dive into query optimization techniques on Microsoft SQL Server using Extended Events and SQL Profiler to reduce execution time by 35%.",
+    content: "During my database engineering internship at PT Adicipta Inovasi Teknologi (AdIns), I worked on optimizing database performance for enterprise financial systems (CONFINS Core). One of the primary challenges was identifying and resolving slow-running queries that affected transaction processing speed. By leveraging tools like SQL Profiler and Extended Events, I analyzed execution plans, implemented indexing strategies, and optimized PL/SQL and SQL query structures. This post covers the step-by-step methodologies used to achieve a 35% reduction in execution time, including indexing strategies, routines, and risk-free validations with HypoPG in PostgreSQL environments.",
+    date: "Feb 12, 2026",
+    readTime: "5 min read",
+    category: "Database",
+    coverImage: "/project-covers/database-rental-game.svg"
+  },
+  {
+    id: "medsign-healthcare-ai",
+    title: "Building MedSign: AI-Powered Sign Language Medical Assistant",
+    excerpt: "How we developed an AI-powered communication assistant for medical settings to translate BISINDO sign language in real-time.",
+    content: "MedSign was developed as a PKM-KC project to bridge the communication gap between medical staff and deaf/mute patients using BISINDO (Indonesian Sign Language). The project combines a Next.js frontend deployed on Vercel with computer vision model pipelines. In this article, I discuss the architecture of MedSign, how we integrated gesture demo assets, and the challenges of deploying web-based real-time gesture recognition systems for healthcare environments. We aimed to ensure high performance, accessibility, and intuitive UX.",
+    date: "Jan 20, 2026",
+    readTime: "6 min read",
+    category: "Artificial Intelligence",
+    coverImage: "/project-covers/medsign.svg"
+  },
+  {
+    id: "dba-workflow-automation",
+    title: "DBA Workflow Automation with n8n and AI Integration",
+    excerpt: "Reducing manual DBA workloads by 40% through low-code AI automation workflows using n8n and custom monitoring triggers.",
+    content: "Database administration involves many routine tasks, including system health monitoring, backups, and security audits. To improve team agility and free up time for strategic decisions, I designed and implemented custom automation workflows using n8n. By configuring automated alerts, performance monitoring triggers, and cross-system housekeeping, we reduced manual operations by 40%. This post details the setup, event triggers, and optimization strategies for DBA team workflows.",
+    date: "Nov 15, 2025",
+    readTime: "4 min read",
+    category: "Automation",
+    coverImage: "/project-covers/queue-simulation.svg"
+  }
 ];

@@ -31,3 +31,5 @@ verification-*.png
 Thumbs.db
 
 .vercel
+
+dev-server*.log

@@ -5,6 +5,8 @@ import { ExperienceSection } from "@/components/experience-section";
 import { HeroSection } from "@/components/hero-section";
 import { Navigation } from "@/components/navigation";
 import { ProjectsSection } from "@/components/projects-section";
+import { RepositoriesSection } from "@/components/repositories-section";
+import { BlogSection } from "@/components/blog-section";
 import { SiteFooter } from "@/components/site-footer";
 import { SkillsSection } from "@/components/skills-section";
 import { SmoothScroll } from "@/components/smooth-scroll";
@@ -19,6 +21,8 @@ export function PortfolioPage() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
+        <RepositoriesSection />
+        <BlogSection />
         <ExperienceSection />
         <AchievementsSection />
         <ContactSection />

@@ -111,7 +111,12 @@ export function HeroSection() {
           </motion.div>
         </div>
 
-        <motion.div variants={item} className="relative mx-auto w-full max-w-[420px] lg:mr-0">
+        <motion.div 
+          variants={item} 
+          className="relative mx-auto w-full max-w-[420px] lg:mr-0 group cursor-pointer"
+          whileHover={{ y: -6, rotate: -1, scale: 1.01 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
           <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] border border-white/80 bg-white/50 p-3 shadow-glow backdrop-blur-xl">
             <div className="relative h-full overflow-hidden rounded-[22px] border border-blue-100 bg-[linear-gradient(145deg,#DBEAFE_0%,#FFFFFF_46%,#EDE9FE_100%)]">
               <Image
@@ -120,7 +125,7 @@ export function HeroSection() {
                 fill
                 priority
                 sizes="(min-width: 1024px) 420px, 90vw"
-                className="object-cover object-[58%_center]"
+                className="object-cover object-[58%_center] transition duration-700 ease-out group-hover:scale-[1.04]"
               />
               <div className="absolute inset-x-5 bottom-5 rounded-lg border border-white/80 bg-white/78 p-4 shadow-card backdrop-blur-xl">
                 <p className="text-sm font-semibold text-ink">Google Student Ambassador</p>

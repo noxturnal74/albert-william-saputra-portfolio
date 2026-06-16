@@ -95,6 +95,28 @@ export const projects = [
     ],
   },
   {
+    title: "Indonesian Gyms Parallax Directory",
+    category: "Frontend Web Hub",
+    summary:
+      "A comprehensive digital directory housing 20 distinct gym and fitness center landing pages in Malang, Indonesia. Features high-fidelity parallax scrolling, interactive map integrations, and custom branding.",
+    stack: ["HTML", "CSS", "JavaScript", "Parallax Scroll", "Vercel"],
+    cover: {
+      src: "/project-covers/gyms-directory-hub.svg",
+      alt: "Gyms Directory Hub showing multiple gym landing pages",
+    },
+    signals: ["20 Websites", "Parallax Effect", "Interactive UI"],
+    links: [
+      {
+        label: "Live Demo",
+        href: "https://project-xc6z6.vercel.app/gyms",
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/noxturnal74/batch-landing-page-parallax",
+      },
+    ],
+  },
+  {
     title: "Database Rental Game",
     category: "Database System",
     summary:
@@ -193,6 +215,17 @@ export const repositories = [
     deployedPlatform: "Vercel",
     stars: 8,
     forks: 1,
+    status: "active"
+  },
+  {
+    name: "batch-landing-page-parallax",
+    description: "A comprehensive digital showcase containing 20 distinct gym landing pages in Malang, Indonesia, featuring parallax scrolling and custom branding.",
+    techStack: ["HTML", "CSS", "JavaScript", "Vercel"],
+    githubUrl: "https://github.com/noxturnal74/batch-landing-page-parallax",
+    deployUrl: "https://project-xc6z6.vercel.app/gyms",
+    deployedPlatform: "Vercel",
+    stars: 15,
+    forks: 3,
     status: "active"
   },
   {

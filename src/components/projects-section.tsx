@@ -8,12 +8,12 @@ import {
   BrainCircuit,
   Code2,
   Database,
+  Dumbbell,
   ExternalLink,
   Layers,
 } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { projects } from "@/data/portfolio";
-import { cn } from "@/lib/utils";
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -28,7 +28,7 @@ const cardVariants: Variants = {
   }),
 };
 
-const projectIcons = [BrainCircuit, BrainCircuit, Database, Layers, Code2];
+const projectIcons = [BrainCircuit, BrainCircuit, Dumbbell, Database, Layers, Code2];
 
 export function ProjectsSection() {
   return (
@@ -38,7 +38,7 @@ export function ProjectsSection() {
       title="Selected Work & Technology"
       description="Projects span AI-assisted healthcare, computer vision fitness feedback, database systems, image processing, and simulation."
     >
-      <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-6">
+      <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => {
           const Icon = projectIcons[index] ?? Code2;
 
@@ -52,27 +52,15 @@ export function ProjectsSection() {
               viewport={{ once: true, margin: "-80px" }}
               whileHover={{ y: -4, scale: 1.01, boxShadow: "0 20px 40px -15px rgba(29, 78, 216, 0.08)" }}
               transition={{ duration: 0.3 }}
-              className={cn(
-                "group overflow-hidden rounded-2xl border border-white/70 bg-white/78 shadow-card backdrop-blur-xl flex flex-col justify-between cursor-pointer",
-                index < 2 ? "lg:col-span-3" : "lg:col-span-2"
-              )}
+              className="group overflow-hidden rounded-2xl border border-white/70 bg-white/78 shadow-card backdrop-blur-xl flex flex-col justify-between cursor-pointer"
             >
               <div>
-                <div
-                  className={cn(
-                    "relative overflow-hidden border-b border-white/80 bg-blue-50/50",
-                    index < 2 ? "h-60 sm:h-64" : "h-52"
-                  )}
-                >
+                <div className="relative overflow-hidden border-b border-white/80 bg-blue-50/50 h-52">
                   <NextImage
                     src={project.cover.src}
                     alt={project.cover.alt}
                     fill
-                    sizes={
-                      index < 2
-                        ? "(min-width: 1024px) 520px, (min-width: 768px) 50vw, 100vw"
-                        : "(min-width: 1024px) 350px, (min-width: 768px) 50vw, 100vw"
-                    }
+                    sizes="(min-width: 1024px) 350px, (min-width: 768px) 50vw, 100vw"
                     className="object-cover transition duration-700 ease-out group-hover:scale-[1.04]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/20 via-transparent to-white/10" />
